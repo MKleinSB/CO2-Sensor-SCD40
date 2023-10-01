@@ -1,26 +1,29 @@
+// //% deprecated
+// namespace SCD40 { }   // Auskommentieren wenn die normalen Blöcke nicht erscheinen sollen
+
 namespace modules {
 
     /**
      * The SCD40 temperature sensor
      */
     //% fixedInstance whenUsed block="SCD40 temperature"
-    export const kitronikTemperature = new TemperatureClient(
-        "SCD40 temperature?dev=self&variant=Outdoor"
+    export const scd40Temperature = new TemperatureClient(
+        "SCD40 temperature?dev=self&variant=indoor"
     )
 
     /**
      * The SCD40 air humidity sensor
      */
     //% fixedInstance whenUsed block="SCD40 humidity"
-    export const SCD40Humidity = new HumidityClient(
+    export const scd40Humidity = new HumidityClient(
         "SCD40 humidity?dev=self"
     )
 
     /**
      * The SCD40 CO2
      */
-    //% fixedInstance whenUsed block="kitronik CO2"
-    export const SCD40CO2 = new ECO2Client("SCD40 CO2?dev=self")
+    //% fixedInstance whenUsed block="SCD40 CO2"
+    export const scd40CO2 = new ECO2Client("SCD40 CO2?dev=self")
 
 }
 
