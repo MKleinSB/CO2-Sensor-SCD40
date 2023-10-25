@@ -1,6 +1,6 @@
-// //% deprecated
-// namespace SCD40 { }   // Auskommentieren wenn die normalen Blöcke nicht erscheinen sollen
-
+ //% deprecated
+ namespace SCD40 { }   // Auskommentieren wenn die normalen Blöcke erscheinen 
+ 
 namespace modules {
 
     /**
