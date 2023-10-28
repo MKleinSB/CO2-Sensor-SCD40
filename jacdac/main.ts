@@ -20,7 +20,7 @@ namespace modules {
     )
 
     /**
-     * The SCD40 CO2
+     * The Calliope mini CO2 Sensor - SCD40
      */
     //% fixedInstance whenUsed block="SCD40 CO2"
     export const scd40CO2 = new ECO2Client("SCD40 CO2?dev=self")
@@ -79,8 +79,8 @@ namespace servers {
     }
 
     function start() {
-        jacdac.productIdentifier = 0x3c1974e8
-        jacdac.deviceDescription = "Sensirion SCD40"
+        jacdac.productIdentifier = 0x3560a8cb
+        jacdac.deviceDescription = "Calliope mini SCD40"
         jacdac.startSelfServers(() => createServers())
     }
     start()
