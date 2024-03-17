@@ -1,6 +1,6 @@
 {
     "name": "co2-sensor-scd40-jacdac",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "dependencies": {
         "core": "*",
         "co2-sensor-scd40": "github:mkleinsb/co2-sensor-scd40",
